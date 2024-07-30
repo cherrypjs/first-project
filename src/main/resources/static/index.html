@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>쇼핑몰 메인 페이지</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 100%;
+            margin: 0 auto;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .nav {
+            display: flex;
+        }
+        .nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            padding: 10px;
+            border: 1px solid #fff;
+            color: #fff;
+            background-color: #444;
+            border-radius: 5px;
+        }
+        .nav a:hover {
+            background-color: #555;
+        }
+        .main {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .card {
+            border: 1px solid #ddd;
+            padding: 10px;
+            width: 30%;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+            border-radius: 5px 5px 0 0;
+        }
+        .card-title {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <div class="logo">로고</div>
+        <div class="nav">
+            <a href="#login">로그인</a>
+            <a href="#signup">회원가입</a>
+            <a href="#inquiry">문의</a>
+            <a href="#community">커뮤니티</a>
+        </div>
+    </div>
+    <div class="main">
+        <div class="card">
+            <img src="./img/image1.jpg" alt="웹프로그래밍 이미지">
+            <div class="card-title">웹프로그래밍</div>
+        </div>
+        <div class="card">
+            <img src="./img/image2.jpg" alt="인공지능 기초 이미지">
+            <div class="card-title">인공지능 기초</div>
+        </div>
+        <div class="card">
+            <img src="./img/image3.jpg" alt="IOT 이미지">
+            <div class="card-title">IOT</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
